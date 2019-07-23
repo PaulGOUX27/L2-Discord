@@ -2,6 +2,8 @@ const tokenFile  = require('./config.json');
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+//develop
+
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 });
