@@ -34,8 +34,12 @@ client.on('message', msg => {
                     classementLigue2 += `${lemans}`;
                 else
                     classementLigue2 += club["team_name"];
+
+                classementLigue2 += "             ";
+                classementLigue2 += club["overall_league_PTS"] + "pts";
                 classementLigue2 += "\n";
             });
+
             msg.channel.send(classementLigue2);
         })
     }
