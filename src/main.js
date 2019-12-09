@@ -34,7 +34,7 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-    if (msg.content === 'ping') {
+    if (msg.content === 'l2') {
         request('https://apiv2.apifootball.com/?action=get_standings&league_id=' + l2Id + '&APIkey=' + tokenFile.apiKey, {json: true}, (err, res, body) => {
             //console.log(body);
             let classementLigue2 = "__Classement Ligue 2__\n";
